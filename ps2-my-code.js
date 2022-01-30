@@ -20,7 +20,7 @@ function addOne(x) {
  */
 
 function largest(lst) {
-  Math.max(...lst);
+  return Math.max(...lst);
 }
 
 /**
@@ -41,7 +41,7 @@ function fact(n) {
   else{
     let result = 1;
     for(let i = n; i > 0; i--){
-      result = result * n;
+      result = result * i;
     }
     return result;
   }
@@ -69,8 +69,20 @@ function fact(n) {
   */
 
 function fib(n) {
-  sum = 0;
-  for (let i = 0; i < n; i++){
-    sum += i;
+  let last1 = 1;
+  let last2 = 0;
+  let current = 0;
+  if (n==0){
+    return 0;
   }
+  else if (n==1){
+    return 1;
+  }
+  else{  
+    for (let i = 0; i < n-1; i++){
+      current = last1 + last2;
+      last2 = last1;
+      last1 = current;
+    }
+    return current;}
 }
