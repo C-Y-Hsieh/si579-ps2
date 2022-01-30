@@ -1,0 +1,25 @@
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #292C8C;
+}
+
+#nav-bar{
+    height: 10%;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 2% 0 0;
+    padding: 1%;
+    border: solid 1px;
+    background-color: #292C8C;
+}
+
+nav li a{
+    color: #FFFFFF;
+}
